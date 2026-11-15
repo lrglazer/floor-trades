@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: floor-trades
+    runtime: static
+    staticPublishPath: .
+    headers:
+      - path: /data/*
+        name: Cache-Control
+        value: no-cache
